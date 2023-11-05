@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+	<script defer src='js/phoneinput.js'></script>
+	<script defer src='js/dynamic_adapt.js'></script>
+	<script defer type="module" src='js/main.min.js'></script>
+	<title>GYNECOLASE клиника Леонида Спокойного | Главная</title>
+</head>
+
+<body class=''>
+	<div class="wrapper">
+
+		<div class="popup popup-record" id='popup-record'>
+			<div class="popup-record__wrapper">
+
+				<div class="popup-record__content">
+					<button class="popup-record__close popup-close" type="button">
+						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M16 2C8.2 2 2 8.2 2 16C2 23.8 8.2 30 16 30C23.8 30 30 23.8 30 16C30 8.2 23.8 2 16 2ZM21.4 23L16 17.6L10.6 23L9 21.4L14.4 16L9 10.6L10.6 9L16 14.4L21.4 9L23 10.6L17.6 16L23 21.4L21.4 23Z"
+								fill="#33355C" />
+						</svg>
+					</button>
+
+					<div class="popup-record__info">
+						<a class="popup-record__logo logo" href="#">
+							<img class="logo__img" src="images/logo.png" alt="логотип">
+							<span class='logo__title'>клиника Леонида Спокойного</span>
+						</a>
+						<p class="popup-record__title" Для записи на приём, заполните короткую форму:</p>
+
+						<form action="" class="popup-record__form">
+							<div class="popup-record__box">
+								<input class="popup-record__input input" type="text" placeholder=" ">
+								<label class="popup-record__label">Ваше имя</label>
+							</div>
+							<div class="popup-record__box">
+								<input class="popup-record__input input" type="tel" data-tel-input name="phone" placeholder=" ">
+								<label class="popup-record__label">Номер телефона</label>
+							</div>
+
+							<div class="__select" data-state="">
+								<div class="__select__title" data-default="Option 0">Выберите услугу</div>
+								<div class="__select__content">
+									<input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+									<label for="singleSelect0" class="__select__label">Опция 0</label>
+									<input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+									<label for="singleSelect1" class="__select__label">Опция 1</label>
+									<input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" disabled />
+									<label for="singleSelect2" class="__select__label">Опция 2 (недоступно)</label>
+									<input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+									<label for="singleSelect3" class="__select__label">Опция 3</label>
+									<input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+									<label for="singleSelect4" class="__select__label">Опция 4</label>
+								</div>
+							</div>
+							<div class="popup-record__box">
+								<input type="date" class="popup-record__date popup-record__input">
+								<label for="date" class='popup-record__label'>Выберите желаемую дату</label>
+							</div>
+
+							<button class='popup-record__btn btn btn_main' type="button">Записаться на консультацию</button>
+						</form>
+					</div>
+
+					<div class="popup-record__image">
+						<img src="images/image3.png" alt="">
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<header class="header">
+
+			<div class="header__top">
+				<div class="header__container">
+					<div class="header__menu menu">
+						<a class="header__logo logo" href="#">
+							<img class="logo__img" src="images/logo.png" alt="логотип">
+							<span class='logo__title'>клиника <span>Леонида Спокойного</span></span>
+						</a>
+
+						<nav class="menu__body">
+
+							<ul class="menu__list">
+								<li class="menu__item menu__item_dropdown">
+									<a href="#dropdown" class="menu__link">
+										Гинекология
+										<svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 0.5L4 3.5L7 0.5" stroke="" />
+										</svg>
+									</a>
+
+
+								</li>
+								<li class="menu__item menu__item_dropdown">
+									<a href="#dropdown" class="menu__link">
+										Косметология
+										<svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1 0.5L4 3.5L7 0.5" stroke="" />
+										</svg>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link">О клинике</a>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link">Цены</a>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link">Акции</a>
+								</li>
+								<li class="menu__item">
+									<a href="" class="menu__link">Контакты</a>
+								</li>
+							</ul>
+
+						</nav>
+
+						<button class="header__tel btn btn_main" data-da=".menu__body, 580" type="button">Обратный звонок</button>
+
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+					</div>
+					<div id='dropdown' class="dropdown hidden" data-da=".menu__list, 1024, 0">
+						<div class="dropdown__wrapper">
+							<div class="dropdown__search search">
+								<input type="text" class="search__input" placeholder='Поиск'>
+								<button class="search__btn" type='button' type="button">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="">
+										<path
+											d="M21.75 20.6895L16.086 15.0255C17.4471 13.3914 18.1258 11.2956 17.981 9.17389C17.8362 7.05219 16.879 5.06801 15.3085 3.6341C13.7379 2.2002 11.6751 1.42697 9.54899 1.47528C7.42291 1.52359 5.39729 2.38971 3.89353 3.89347C2.38977 5.39723 1.52365 7.42284 1.47534 9.54893C1.42703 11.675 2.20026 13.7379 3.63416 15.3084C5.06807 16.8789 7.05225 17.8361 9.17395 17.981C11.2957 18.1258 13.3915 17.4471 15.0255 16.086L20.6895 21.75L21.75 20.6895ZM3.00003 9.74996C3.00003 8.41494 3.39591 7.1099 4.13761 5.99987C4.87931 4.88983 5.93351 4.02467 7.16691 3.51378C8.40031 3.00289 9.75751 2.86921 11.0669 3.12966C12.3763 3.39011 13.579 4.03299 14.523 4.97699C15.467 5.921 16.1099 7.12373 16.3703 8.4331C16.6308 9.74248 16.4971 11.0997 15.9862 12.3331C15.4753 13.5665 14.6102 14.6207 13.5001 15.3624C12.3901 16.1041 11.085 16.5 9.75002 16.5C7.96042 16.498 6.24469 15.7862 4.97925 14.5207C3.71381 13.2553 3.00201 11.5396 3.00003 9.74996Z"
+											fill="" />
+									</svg>
+								</button>
+							</div>
+
+							<div class="dropdown__body">
+								<ul class="dropdown-menu">
+									<li class="dropdown-menu__item service-1">
+										<a href="#service-1" class="dropdown-menu__link">Лечение недержания мочи
+											<svg class='dropdown-menu__icon' width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.71 15.2899L14.3 12.6999C14.3927 12.6074 14.4662 12.4975 14.5164 12.3766C14.5666 12.2556 14.5924 12.1259 14.5924 11.9949C14.5924 11.864 14.5666 11.7343 14.5164 11.6133C14.4662 11.4924 14.3927 11.3825 14.3 11.2899L11.71 8.69995C11.08 8.06995 9.99996 8.51995 9.99996 9.40995L9.99996 14.5899C9.99996 15.4799 11.08 15.9199 11.71 15.2899Z"
+													fill="" />
+											</svg>
+										</a>
+									</li>
+									<li class="dropdown-menu__item service-2">
+										<a href="#service-2" class="dropdown-menu__link">Интимное омоложение
+											<svg class='dropdown-menu__icon' width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.71 15.2899L14.3 12.6999C14.3927 12.6074 14.4662 12.4975 14.5164 12.3766C14.5666 12.2556 14.5924 12.1259 14.5924 11.9949C14.5924 11.864 14.5666 11.7343 14.5164 11.6133C14.4662 11.4924 14.3927 11.3825 14.3 11.2899L11.71 8.69995C11.08 8.06995 9.99996 8.51995 9.99996 9.40995L9.99996 14.5899C9.99996 15.4799 11.08 15.9199 11.71 15.2899Z"
+													fill="" />
+											</svg>
+										</a>
+									</li>
+									<li class="dropdown-menu__item service-3">
+										<a href="#service-3" class="dropdown-menu__link">Послеродовое восстановление
+											<svg class='dropdown-menu__icon' width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.71 15.2899L14.3 12.6999C14.3927 12.6074 14.4662 12.4975 14.5164 12.3766C14.5666 12.2556 14.5924 12.1259 14.5924 11.9949C14.5924 11.864 14.5666 11.7343 14.5164 11.6133C14.4662 11.4924 14.3927 11.3825 14.3 11.2899L11.71 8.69995C11.08 8.06995 9.99996 8.51995 9.99996 9.40995L9.99996 14.5899C9.99996 15.4799 11.08 15.9199 11.71 15.2899Z"
+													fill="" />
+											</svg>
+										</a>
+									</li>
+									<li class="dropdown-menu__item dropdown-menu__item_off service-4">
+										<a href="#service-4" class="dropdown-menu__link">Медикаментозный аборт
+											<svg class='dropdown-menu__icon' width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.71 15.2899L14.3 12.6999C14.3927 12.6074 14.4662 12.4975 14.5164 12.3766C14.5666 12.2556 14.5924 12.1259 14.5924 11.9949C14.5924 11.864 14.5666 11.7343 14.5164 11.6133C14.4662 11.4924 14.3927 11.3825 14.3 11.2899L11.71 8.69995C11.08 8.06995 9.99996 8.51995 9.99996 9.40995L9.99996 14.5899C9.99996 15.4799 11.08 15.9199 11.71 15.2899Z"
+													fill="" />
+											</svg>
+										</a>
+									</li>
+									<li class="dropdown-menu__item service-5">
+										<a href="#service-5" class="dropdown-menu__link">Лечение пролапса
+											<svg class='dropdown-menu__icon' width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.71 15.2899L14.3 12.6999C14.3927 12.6074 14.4662 12.4975 14.5164 12.3766C14.5666 12.2556 14.5924 12.1259 14.5924 11.9949C14.5924 11.864 14.5666 11.7343 14.5164 11.6133C14.4662 11.4924 14.3927 11.3825 14.3 11.2899L11.71 8.69995C11.08 8.06995 9.99996 8.51995 9.99996 9.40995L9.99996 14.5899C9.99996 15.4799 11.08 15.9199 11.71 15.2899Z"
+													fill="" />
+											</svg>
+										</a>
+									</li>
+									<li class="dropdown-menu__item service-6">
+										<a href="#service-6" class="dropdown-menu__link">Лечение недержания мочи
+											<svg class='dropdown-menu__icon' width="24" height="24" viewBox="0 0 24 24" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.71 15.2899L14.3 12.6999C14.3927 12.6074 14.4662 12.4975 14.5164 12.3766C14.5666 12.2556 14.5924 12.1259 14.5924 11.9949C14.5924 11.864 14.5666 11.7343 14.5164 11.6133C14.4662 11.4924 14.3927 11.3825 14.3 11.2899L11.71 8.69995C11.08 8.06995 9.99996 8.51995 9.99996 9.40995L9.99996 14.5899C9.99996 15.4799 11.08 15.9199 11.71 15.2899Z"
+													fill="" />
+											</svg>
+										</a>
+									</li>
+								</ul>
+								<div class="dropdown__submenu">
+									<ul id='#service-1' class="submenu-dropdown" data-da=".service-1, 1024, 1">
+										<li class="submenu-dropdown__item">
+											<a href="" class="submenu-dropdown__link">Лечение недержания мочи</a>
+											<a href="" class="submenu-dropdown__link">Лечение недержания мочи два</a>
+											<a href="" class="submenu-dropdown__link">Третье лечение недержания мочи</a>
+										</li>
+									</ul>
+									<ul id='#service-2' class="submenu-dropdown" data-da=".service-2, 1024, 2">
+										<li class="submenu-dropdown__item">
+											<a href="" class="submenu-dropdown__link">Лечение недержания мочи</a>
+											<a href="" class="submenu-dropdown__link">Лечение недержания мочи два</a>
+											<a href="" class="submenu-dropdown__link">Третье лечение недержания мочи</a>
+										</li>
+									</ul>
+									<ul id='#service-3' class="submenu-dropdown" data-da=".service-3, 1024, 3">
+										<li class="submenu-dropdown__item">
+											<a href="" class="submenu-dropdown__link">Лечение недержания мочи</a>
+											<a href="" class="submenu-dropdown__link">Лечение недержания мочи два</a>
+											<a href="" class="submenu-dropdown__link">Третье лечение недержания мочи</a>
+										</li>
+									</ul>
+									<ul id='#service-4' class="submenu-dropdown" data-da=".service-4, 1024, 4">
+										<li class="submenu-dropdown__item">
+											<a href="" class="submenu-dropdown__link">Это будет ссылка, временное решение.</a>
+										</li>
+									</ul>
+									<ul id='#service-5' class="submenu-dropdown" data-da=".service-5, 1024,5 ">
+										<li class="submenu-dropdown__item">
+											<a href="" class="submenu-dropdown__link">Лечение недержания мочи</a>
+											<a href="" class="submenu-dropdown__link">Лечение недержания мочи два</a>
+											<a href="" class="submenu-dropdown__link">Третье лечение недержания мочи</a>
+										</li>
+									</ul>
+									<ul id='#service-6' class="submenu-dropdown" data-da=".service-6, 1024, 6">
+										<li class="submenu-dropdown__item">
+											<a href="" class="submenu-dropdown__link">Лечение недержания мочи</a>
+											<a href="" class="submenu-dropdown__link">Лечение недержания мочи два</a>
+											<a href="" class="submenu-dropdown__link">Третье лечение недержания мочи</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__info">
+
+						<h1 class="header__title">Лазерная косметология и гинекология</h1>
+
+						<div class="header__text">
+							<p class="header__subtitle">Получите <span class='_pink-color'>скидку 20%</span> на процедуру
+								лазерной эпиляции!</p>
+							<p>Избавьтесь от нежелательных волос навсегда с помощью современного и безопасного
+								лазерного метода
+								эпиляции.</p>
+						</div>
+
+						<div class="header__buttons" data-da=".header__box, 580">
+							<button class="header__btn btn btn_main" data-popup="#popup-record" type="button">Записаться на прием</button>
+							<button class="header__btn btn btn_second" type="button">Узнать больше</button>
+						</div>
+
+						<ul class="header__list" data-da=".menu__body, 580, 1">
+							<li class="header__list-item">
+								<a href="tel:+78126678376" class="header__list-link">+7 (812) 667-83-76</a>
+							</li>
+							<li class="header__list-item">
+								<a href="tel:+79119252346" class="header__list-link">+7 (911) 925-23-46</a>
+							</li>
+							<li class="header__list-item">
+								<a href="tel:+79213216977" class="header__list-link">+7 (921) 321-69-77</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="header__box">
+						<span class="header__box-decor"><!-- Декоративные круги --></span>
+
+						<ul class="header__benefits">
+							<li class="header__benefits-item">
+								<svg class="header__benefits-check" aria-hidden="true"><use xlink:href="#checkbox-fill" x="0" y="0"></use></svg>
+								Лечение недержания мочи
+							</li>
+
+							<li class="header__benefits-item">
+								<svg class="header__benefits-check" aria-hidden="true"><use xlink:href="#checkbox-fill" x="0" y="0"></use></svg>
+								Лазерное омоложение лица
+							</li>
+
+							<li class="header__benefits-item">
+								<svg class="header__benefits-check" aria-hidden="true"><use xlink:href="#checkbox-fill" x="0" y="0"></use></svg>
+								Лечение заболеваний шейки матки
+							</li>
+
+							<li class="header__benefits-item">
+								<svg class="header__benefits-check" aria-hidden="true"><use xlink:href="#checkbox-fill" x="0" y="0"></use></svg>
+								LGP терапия лица и&nbsp;тела
+							</li>
+
+							<li class="header__benefits-item">
+								<svg class="header__benefits-check" aria-hidden="true"><use xlink:href="#checkbox-fill" x="0" y="0"></use></svg>
+								Интимное омоложение
+							</li>
+
+							<li class="header__benefits-item">
+								<svg class="header__benefits-check" aria-hidden="true"><use xlink:href="#checkbox-fill" x="0" y="0"></use></svg>
+								Аппаратные методики
+							</li>
+						</ul>
+
+						<picture class="header__doctors" aria-hidden="true">
+							<source srcset="images/doctors.webp" type="image/webp">
+							<img class="header__doctors-image" src="images/doctors.png" alt="">
+						</picture>
+					</div>
+				</div>
+
+			</div>
+		</header>
+
+		<main class="main">
+			<section class='advantages section-padding'>
+				<div class='advantages__container'>
+					<div class="advantages__top">
+						<h2 class='advantages__title'>Некоторые из <span class="_pink-color">преимуществ</span>
+							нашей клиники</h2>
+						<span class='advantages__text'>Мы гордимся безупречной репутацией клиники на протяжении 8 лет работы</span>
+					</div>
+					<ul class='advantages__list'>
+						<li class='advantages__item' style='background-image: url("images/advantages/service-2.png");'>
+							<div class="advantages__box">
+								<p class='advantages__item-title'>Передовые технологии</p>
+								<p class='advantages__item-text'>Использование передовых лазерных технологий для косметологических
+									процедур, обеспечивающих высокую
+									эффективность и безопасность.</p>
+							</div>
+						</li>
+						<li class='advantages__item' style='background-image: url("images/advantages/service-1.png");'>
+							<div class="advantages__box">
+								<p class='advantages__item-title'>Квалифицированный персонал</p>
+								<p class="advantages__item-text">Команда профессиональных гинекологов и косметологов с богатым опытом и
+									высокой квалификацией.</p>
+							</div>
+						</li>
+						<li class='advantages__item' style='background-image: url("images/advantages/service-3.png");'>
+							<div class="advantages__box">
+								<p class='advantages__item-title'>Огромный выбор услуг</p>
+								<p class="advantages__item-text">Широкий спектр услуг, включая лазерное омоложение, удаление
+									нежелательных волос, лечение гинекологических заболеваний и многое другое.</p>
+							</div>
+						</li>
+						<li class='advantages__item' style='background-image: url("images/advantages/service-4.png");'>
+							<div class="advantages__box">
+								<p class='advantages__item-title'>Современное оборудование</p>
+								<p class="advantages__item-text">Современное оборудование и средства диагностики, обеспечивающие точные
+									результаты и минимальные риски.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="services section-padding">
+				<div class="services__container">
+					<h2 class="services__title">Услуги клиники</h2>
+
+					<div class="services__buttons">
+						<button class="services__btn services__btn_woman active" type="button">Женщинам</button>
+						<button class="services__btn services__btn_man" type="button">Мужчинам</button>
+					</div>
+
+					<div class="slider-services">
+
+						<div class="services__wrapper services__wrapper_woman">
+							<a href="##" class="services__card service-card">
+								<div class="service-card__top">
+									<span class="service-card__direction">Гинкология</span>
+									<p class="service-card__title">Лечение недержания мочи</p>
+								</div>
+								<div class="service-card__body">
+									<div class="service-card__options">
+										<div class="service-card__option">
+											<p class="service-card__option-title">Консультация</p>
+											<p class="service-card__option-price">1 990 ₽</p>
+										</div>
+										<div class="service-card__option">
+											<p class="service-card__option-title">1 лазерная процедура</p>
+											<p class="service-card__option-price">9 990 ₽</p>
+										</div>
+										<div class="service-card__option">
+											<p class="service-card__option-title">1 инъекционная процедура</p>
+											<p class="service-card__option-price">39 990 ₽</p>
+										</div>
+									</div>
+
+									<div class="service-card__img"><img src="images/doctor-1.png" alt=""></div>
+								</div>
+							</a>
+							<a href="##" class="services__card service-card">
+								<div class="service-card__top">
+									<span class="service-card__direction">Гинкология</span>
+									<p class="service-card__title">Послеродовое
+										восстановление</p>
+								</div>
+								<div class="service-card__body">
+									<div class="service-card__options">
+										<div class="service-card__option">
+											<p class="service-card__option-title">Консультация</p>
+											<p class="service-card__option-price">1 990 ₽</p>
+										</div>
+										<div class="service-card__option">
+											<p class="service-card__option-title">1 лазерная процедура</p>
+											<p class="service-card__option-price">39 990 ₽</p>
+										</div>
+									</div>
+									<div class="service-card__img"><img src="images/doctor-2.png" alt=""></div>
+								</div>
+							</a>
+							<a href="##" class="services__card service-card">
+								<div class="service-card__top">
+									<span class="service-card__direction">Гинкология</span>
+									<p class="service-card__title">Лечение заболеваний
+										шейки матки</p>
+								</div>
+								<div class="service-card__body">
+									<div class="service-card__options">
+										<div class="service-card__option">
+											<p class="service-card__option-title">Консультация</p>
+											<p class="service-card__option-price">1 990 ₽</p>
+										</div>
+										<div class="service-card__option">
+											<p class="service-card__option-title">1 процедура</p>
+											<p class="service-card__option-price">от 39 990 ₽</p>
+										</div>
+									</div>
+									<div class="service-card__img"><img src="images/doctor-1.png" alt=""></div>
+								</div>
+							</a>
+							<a href="##" class="services__card service-card">
+								<div class="service-card__top">
+									<span class="service-card__direction">Гинкология</span>
+									<p class="service-card__title">Послеродовое
+										восстановление</p>
+								</div>
+								<div class="service-card__body">
+									<div class="service-card__options">
+										<div class="service-card__option">
+											<p class="service-card__option-title">Консультация</p>
+											<p class="service-card__option-price">1 990 ₽</p>
+										</div>
+										<div class="service-card__option">
+											<p class="service-card__option-title">1 инъекционная процедура</p>
+											<p class="service-card__option-price">39 990 ₽</p>
+										</div>
+									</div>
+									<div class="service-card__img"><img src="images/doctor-3.png" alt=""></div>
+								</div>
+							</a>
+							<a href="##" class="services__card service-card">
+								<div class="service-card__top">
+									<span class="service-card__direction">Гинкология</span>
+									<p class="service-card__title">Лазерное лечение рубцов
+										и растяжек</p>
+								</div>
+								<div class="service-card__body">
+									<div class="service-card__options">
+										<div class="service-card__option">
+											<p class="service-card__option-title">Консультация</p>
+											<p class="service-card__option-price">2 990 ₽</p>
+										</div>
+										<div class="service-card__option">
+											<p class="service-card__option-title">1 инъекционная процедура</p>
+											<p class="service-card__option-price">39 990 ₽</p>
+										</div>
+									</div>
+									<div class="service-card__img"><img src="images/doctor-4.png" alt=""></div>
+								</div>
+							</a>
+							<a href="##" class="services__card service-card service-card_all">
+								<p class="service-card__title">Смотреть все услуги</p>
+								<svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 14.5L14 1.5M14 1.5L14 13.98M14 1.5L1.52 1.5" stroke="#33355C" stroke-width="1.5"
+										stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</a>
+						</div>
+
+						<div class="services__wrapper services__wrapper_man hidden">
+							<a href="##" class="services__card service-card">
+								<div class="service-card__top">
+									<span class="service-card__direction">Гинкология</span>
+									<p class="service-card__title">Лечение недержания мочи</p>
+								</div>
+								<div class="service-card__body">
+									<div class="service-card__options">
+										<div class="service-card__option">
+											<p class="service-card__option-title">Консультация</p>
+											<p class="service-card__option-price">1 990 ₽</p>
+										</div>
+										<div class="service-card__option">
+											<p class="service-card__option-title">1 лазерная процедура</p>
+											<p class="service-card__option-price">9 990 ₽</p>
+										</div>
+										<div class="service-card__option">
+											<p class="service-card__option-title">1 инъекционная процедура</p>
+											<p class="service-card__option-price">39 990 ₽</p>
+										</div>
+									</div>
+
+									<div class="service-card__img"><img src="images/doctor-1.png" alt=""></div>
+								</div>
+							</a>
+							<a href="##" class="services__card service-card">
+								<div class="service-card__top">
+									<span class="service-card__direction">Гинкология</span>
+									<p class="service-card__title">Послеродовое
+										восстановление</p>
+								</div>
+								<div class="service-card__body">
+									<div class="service-card__options">
+										<div class="service-card__option">
+											<p class="service-card__option-title">Консультация</p>
+											<p class="service-card__option-price">1 990 ₽</p>
+										</div>
+										<div class="service-card__option">
+											<p class="service-card__option-title">1 лазерная процедура</p>
+											<p class="service-card__option-price">39 990 ₽</p>
+										</div>
+									</div>
+									<div class="service-card__img"><img src="images/doctor-2.png" alt=""></div>
+								</div>
+							</a>
+							<a href="##" class="services__card service-card">
+								<div class="service-card__top">
+									<span class="service-card__direction">Гинкология</span>
+									<p class="service-card__title">Лечение заболеваний
+										шейки матки</p>
+								</div>
+								<div class="service-card__body">
+									<div class="service-card__options">
+										<div class="service-card__option">
+											<p class="service-card__option-title">Консультация</p>
+											<p class="service-card__option-price">1 990 ₽</p>
+										</div>
+										<div class="service-card__option">
+											<p class="service-card__option-title">1 процедура</p>
+											<p class="service-card__option-price">от 39 990 ₽</p>
+										</div>
+									</div>
+									<div class="service-card__img"><img src="images/doctor-1.png" alt=""></div>
+								</div>
+							</a>
+							<a href="##" class="services__card service-card">
+								<div class="service-card__top">
+									<span class="service-card__direction">Гинкология</span>
+									<p class="service-card__title">Послеродовое
+										восстановление</p>
+								</div>
+								<div class="service-card__body">
+									<div class="service-card__options">
+										<div class="service-card__option">
+											<p class="service-card__option-title">Консультация</p>
+											<p class="service-card__option-price">1 990 ₽</p>
+										</div>
+										<div class="service-card__option">
+											<p class="service-card__option-title">1 инъекционная процедура</p>
+											<p class="service-card__option-price">39 990 ₽</p>
+										</div>
+									</div>
+									<div class="service-card__img"><img src="images/doctor-3.png" alt=""></div>
+								</div>
+							</a>
+							<a href="##" class="services__card service-card">
+								<div class="service-card__top">
+									<span class="service-card__direction">Гинкология</span>
+									<p class="service-card__title">Лазерное лечение рубцов
+										и растяжек</p>
+								</div>
+								<div class="service-card__body">
+									<div class="service-card__options">
+										<div class="service-card__option">
+											<p class="service-card__option-title">Консультация</p>
+											<p class="service-card__option-price">2 990 ₽</p>
+										</div>
+										<div class="service-card__option">
+											<p class="service-card__option-title">1 инъекционная процедура</p>
+											<p class="service-card__option-price">39 990 ₽</p>
+										</div>
+									</div>
+									<div class="service-card__img"><img src="images/doctor-4.png" alt=""></div>
+								</div>
+							</a>
+							<a href="##" class="services__card service-card service-card_all">
+								<p class="service-card__title">Смотреть все услуги</p>
+								<svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 14.5L14 1.5M14 1.5L14 13.98M14 1.5L1.52 1.5" stroke="#33355C" stroke-width="1.5"
+										stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</a>
+						</div>
+
+					</div>
+
+				</div>
+	</div>
+	</section>
+
+	<section class='counseling section-padding'>
+		<div class='counseling__container'>
+			<form action="" class="counseling__form form-counseling">
+				<div class="form-counseling__top">
+					<h2 class='form-counseling__title'>Записаться	<br>на консультацию</h2>
+					<p class="form-counseling__text">Для записи на консультацию заполните короткую форму и мы свяжемся с вами
+						в
+						течение
+						рабочего дня</p>
+				</div>
+				<div class="form-counseling__box">
+					<input class="form-counseling__input input" type="text" placeholder=" ">
+					<label class="form-counseling__label">Ваше имя</label>
+				</div>
+				<div class="form-counseling__box">
+					<input class="form-counseling__input input" type="tel" data-tel-input name="phone" placeholder=" ">
+					<label class="form-counseling__label">Номер телефона</label>
+				</div>
+				<button class="form-counseling__button form-btn btn btn_second" type="button">
+					<span class="form-btn__text">Записаться на консультацию</span>
+				</button>
+			</form>
+		</div>
+	</section>
+
+	<section class='about section-padding'>
+		<div class="about__container">
+			<h2 class="about__title">О клинике</h2>
+			<div class="about__top">
+				<div class="about__info">
+
+					<div class="about__person">
+						<div class="about__person-img">
+							<img src="images/person.png" alt="фотография директора">
+						</div>
+						<div class="about__person-text">
+							<p class="about__person-position">Генеральный директор</p>
+							<p class="about__person-name">Леонид Спокойный</p>
+						</div>
+					</div>
+
+					<div class="about__text">
+						Все лучшее, чему я и мои коллеги научились в нашей жизни, медицинские знания, профессионализм,
+						сострадание, умение помочь и поддержать, абсолютную честность и надежность, предлагаем Вам, дорогие
+						пациенты. В клинике реализованы лучшие мировые медицинские технологии для помощи людям.
+						<br>
+						<p>Мы готовы лечить, понимать, доставлять радость и делать счастливыми Вас.</p>
+					</div>
+				</div>
+				<div class="about__img about__img_one" data-da=".about__bottom, 991, 0">
+					<img src="images/image3.png" alt="">
+				</div>
+			</div>
+
+			<div class="about__bottom">
+				<div class="about__img about__img_two">
+					<img src="images/image5.png" alt="">
+				</div>
+				<div class="about__img about__img_tree">
+					<img src="images/image6.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="reviews">
+		<div class="reviews__container">
+			<ul class="reviews__list">
+				<li class="reviews__item reviews__item--01">
+					<p class="reviews__stars">
+						<span>4,6</span>
+						<span class="reviews__stars-icon" data-percent="92" style="--stars-before: 92%"><svg aria-hidden="true"><use xlink:href="#stars-group" x="0" y="0"></use></svg></span>
+					</p>
+
+					<p class="reviews__text"><strong>44</strong> отзыва</p>
+
+					<picture class="reviews__logo">
+						<source srcset="/images/reviews/reviews-logo-01.webp" type="image/webp">
+						<img class="reviews__logo-img" src="/images/reviews/reviews-logo-01.png" alt="Логотип" width="44" height="43">
+					</picture>
+				</li>
+
+				<li class="reviews__item reviews__item--02">
+					<p class="reviews__stars">
+						<span>4,7</span>
+						<span class="reviews__stars-icon" data-percent="94" style="--stars-before: 94%"><svg aria-hidden="true"><use xlink:href="#stars-group" x="0" y="0"></use></svg></span>
+					</p>
+
+					<p class="reviews__text"><strong>39</strong> отзывов</p>
+
+					<picture class="reviews__logo">
+						<source srcset="/images/reviews/reviews-logo-02.webp" type="image/webp">
+						<img class="reviews__logo-img" src="/images/reviews/reviews-logo-02.png" alt="Логотип" width="57" height="57">
+					</picture>
+				</li>
+
+				<li class="reviews__item reviews__item--03">
+					<p class="reviews__stars">
+						<span>5</span>
+						<span class="reviews__stars-icon" data-percent="100" style="--stars-before: 100%"><svg aria-hidden="true"><use xlink:href="#stars-group" x="0" y="0"></use></svg></span>
+					</p>
+
+					<p class="reviews__text"><strong>Gynecolase</strong></p>
+
+					<picture class="reviews__logo">
+						<source srcset="/images/reviews/reviews-logo-03.webp" type="image/webp">
+						<img class="reviews__logo-img" src="/images/reviews/reviews-logo-03.png" alt="Логотип" width="89" height="43">
+					</picture>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class='ceo section-padding'>
+		<div class="ceo__container">
+			<div class="ceo__inner">
+				<h2 class="ceo__title">Блок для СЕО, заголовок
+					до двух строк</h2>
+				<div class="ceo__text">
+					<p>Lorem ipsum dolor sit amet consectetur. Nisl mauris morbi sed mi a tellus et urna cursus. Quis tortor
+						enim orci blandit egestas aenean nunc fermentum consectetur. Amet interdum in morbi feugiat vulputate. A
+						mollis diam pulvinar in arcu cras nunc fusce convallis. Vel mattis enim feugiat senectus rutrum ultricies
+						egestas. Dis vulputate gravida morbi amet lacus ultrices. Hendrerit molestie enim eget accumsan facilisis
+						molestie. Feugiat viverra amet tortor quam orci eleifend. Dui aliquam sed tincidunt sed.
+						Cras pellentesque vitae enim netus magna eget donec morbi. Sit libero risus ultrices integer in. Molestie
+						urna interdum pharetra at adipiscing ante. Urna aliquet ipsum venenatis facilisis amet sit urna diam
+						nulla. Sit interdum mollis molestie feugiat adipiscing. Placerat amet nisi eu laoreet aliquam. Placerat
+						sed purus pharetra sed odio. Malesuada porttitor venenatis sit at ipsum eget. Enim quis purus elit odio
+						elementum lacus nulla. Quis neque congue at dui. Elit euismod.</p>
+				</div>
+			</div>
+			<div class="ceo__inner">
+				<h2 class="ceo__title">Блок для СЕО, заголовок
+					до двух строк</h2>
+				<div class="ceo__text">
+					<p>Lorem ipsum dolor sit amet consectetur. Nisl mauris morbi sed mi a tellus et urna cursus. Quis tortor
+						enim orci blandit egestas aenean nunc fermentum consectetur. Amet interdum in morbi feugiat vulputate. A
+						mollis diam pulvinar in arcu cras nunc fusce convallis. Vel mattis enim feugiat senectus rutrum ultricies
+						egestas. Dis vulputate gravida morbi amet lacus ultrices. Hendrerit molestie enim eget accumsan facilisis
+						molestie. Feugiat viverra amet tortor quam orci eleifend. Dui aliquam sed tincidunt sed.
+						Cras pellentesque vitae enim netus magna eget donec morbi. Sit libero risus ultrices integer in. Molestie
+						urna interdum pharetra at adipiscing ante. Urna aliquet ipsum venenatis facilisis amet sit urna diam
+						nulla. Sit interdum mollis molestie feugiat adipiscing. Placerat amet nisi eu laoreet aliquam. Placerat
+						sed purus pharetra sed odio. Malesuada porttitor venenatis sit at ipsum eget. Enim quis purus elit odio
+						elementum lacus nulla. Quis neque congue at dui. Elit euismod.</p>
+				</div>
+			</div>
+
+	</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__top">
+				<a class="footer__logo logo" href="#">
+					<img class="logo__img" src="images/logo.png" alt="логотип">
+					<span class='logo__title'>клиника Леонида Спокойного</span>
+				</a>
+
+				<span class='footer__address' data-da=".footer__map, 991, 0">г. Санкт-Петербург, пр. Славы д.51</span>
+			</div>
+
+			<div class="footer__body">
+				<ul class="footer__list">
+					<li class="footer__item footer__item_mail">
+						<a href="mail:spb@gynecolase.ru">spb@gynecolase.ru</a>
+					</li>
+					<li class="footer__item footer__item_date">Пн-Вс: с 10:00 до 21:00</li>
+					<li class="footer__item">
+						<a href="tel:+78126678376">+7 (812) 667-83-76</a>
+					</li>
+					<li class="footer__item">
+						<a href="tel:+79119252346">+7 (911) 925-23-46</a>
+					</li>
+					<li class="footer__item">
+						<a href="tel:+79213216977">+7 (921) 321-69-77</a>
+					</li>
+					<li class="footer__item">
+						<ul class="footer__socials">
+							<li class="footer__socials-item">
+								<a href="" class="footer__socials-link">
+									<img src="images/youtube.svg" alt="">
+								</a>
+							</li>
+							<li class="footer__socials-item">
+								<a href="" class="footer__socials-link">
+									<img src="images/vk.svg" alt="">
+								</a>
+							</li>
+							<li class="footer__socials-item">
+								<a href="" class="footer__socials-link">
+									<img src="images/telegram.svg" alt="">
+								</a>
+							</li>
+							<li class="footer__socials-item">
+								<a href="" class="footer__socials-link">
+									<img src="images/whatsapp.svg" alt="">
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="footer__item" data-da=".footer__map, 768,2">© 2015 - 2023. Все права защищены</li>
+				</ul>
+
+				<div class="footer__map">
+					<iframe
+						src="https://yandex.ru/map-widget/v1/?um=constructor%3A2d9f32fff2cc1673590460ec7bf328427cc79a6d47d60aeab2bbc26ffc7bc4af&amp;source=constructor"
+						width="100%" height="326" frameborder="0"></iframe>
+				</div>
+			</div>
+		</div>
+	</footer>
+	</div>
+
+	<svg style="display: none;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+		<symbol id="checkbox-fill" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 2a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5H7Zm8.73 8.684a1.001 1.001 0 0 0-1.46-1.368l-3.083 3.29-1.523-1.353a1 1 0 0 0-1.328 1.494l2.25 2a1 1 0 0 0 1.393-.063l3.751-4Z"></path></symbol>
+		<symbol id="stars-group" viewBox="0 0 182 42"><path fill-rule="evenodd" clip-rule="evenodd" d="M182 0H0v42h182V0ZM22.293 15.823 17.448 5.319l-4.845 10.504-11.487 1.362 8.493 7.854-2.255 11.345 10.094-5.65 10.094 5.65-2.255-11.346 8.493-7.853-11.487-1.362Zm36.491 0L53.94 5.319l-4.845 10.504-11.487 1.362 8.493 7.854-2.255 11.345 10.094-5.65 10.094 5.65-2.255-11.346 8.493-7.853-11.487-1.362ZM90.43 5.319l4.845 10.504 11.487 1.362-8.492 7.854 2.254 11.345-10.094-5.65-10.093 5.65 2.254-11.346-8.492-7.853 11.486-1.362L90.43 5.319Zm41.337 10.504-4.845-10.504-4.845 10.504-11.487 1.362 8.492 7.854-2.254 11.345 10.094-5.65 10.093 5.65-2.254-11.346 8.493-7.853-11.487-1.362Zm31.646-10.504 4.845 10.504 11.487 1.362-8.493 7.854 2.255 11.345-10.094-5.65-10.094 5.65 2.255-11.346-8.493-7.853 11.487-1.362 4.845-10.504Z"></path></symbol>
+	</svg>
+</body>
+
+</html>
