@@ -1,1 +1,1 @@
-# gynecolase
+# Gynecolase — [сайт](https://exist1.github.io/gynecolase/ "Перейти на сайт")
